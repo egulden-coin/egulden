@@ -1031,7 +1031,29 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    return fs::path(".");
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Egulden
+    // Mac: ~/Library/Application Support/Egulden
+    // Unix: ~/.egulden
+    #ifdef WIN32
+        // Windows
+        return GetSpecialFolderPath(CSIDL_APPDATA) / "Egulden";
+    #else
+        fs::path pathRet;
+        char* pszHome = getenv("HOME");
+        if (pszHome == NULL || strlen(pszHome) == 0)
+           pathRet = fs::path("/");
+        else
+            pathRet = fs::path(pszHome);
+        #ifdef MAC_OSX
+            // Mac
+            pathRet /= "Library/Application Support";
+            fs::create_directory(pathRet);
+            return pathRet / "Egulden";
+        #else
+            // Unix
+           return pathRet / ".egulden";
+        #endif
+    #endif
 }
 
 const boost::filesystem::path &GetDataDir(bool fNetSpecific)
