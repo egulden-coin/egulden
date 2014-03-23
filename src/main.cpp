@@ -356,7 +356,7 @@ unsigned int LimitOrphanTxSize(unsigned int nMaxOrphans)
 bool CTxOut::IsDust() const
 {
     // EGulden: IsDust() detection disabled, allows any valid dust to be relayed.
-    // The fees imposed on each dust txo is considered sufficient spam deterrant. 
+    // The fees imposed on each dust txo is considered sufficient spam deterrant.
     return false;
 }
 
@@ -1074,9 +1074,9 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 270000;
-static const int64 nTargetSpacing = 60;
-static const int64 nInterval = nTargetTimespan / nTargetSpacing;
+static const int64 nTargetTimespan = 1.4 * 24 * 60 * 60;         // 1.4 days difficulty retarget
+static const int64 nTargetSpacing = 60;                          // 60 seconds between blocks
+static const int64 nInterval = nTargetTimespan / nTargetSpacing; // 2016 blocks difficulty retarget
 
 //
 // minimum amount of work that could possibly be required nTime after
