@@ -356,7 +356,7 @@ unsigned int LimitOrphanTxSize(unsigned int nMaxOrphans)
 bool CTxOut::IsDust() const
 {
     // EGulden: IsDust() detection disabled, allows any valid dust to be relayed.
-    // The fees imposed on each dust txo is considered sufficient spam deterrant. 
+    // The fees imposed on each dust txo is considered sufficient spam deterrant.
     return false;
 }
 
@@ -1074,9 +1074,9 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 270000;
-static const int64 nTargetSpacing = 60;
-static const int64 nInterval = nTargetTimespan / nTargetSpacing;
+static int64 nTargetTimespan = 270000;                     // 3.125 days difficulty retarget
+static int64 nTargetSpacing = 60;                          // 1 minute between blocks
+static int64 nInterval = nTargetTimespan / nTargetSpacing; // 4500 blocks difficulty retarget
 
 //
 // minimum amount of work that could possibly be required nTime after
@@ -1098,8 +1098,10 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
         // ... in best-case exactly 4-times-normal target time
         nTime -= nTargetTimespan*4;
     }
+
     if (bnResult > bnProofOfWorkLimit)
         bnResult = bnProofOfWorkLimit;
+
     return bnResult.GetCompact();
 }
 
@@ -1110,6 +1112,14 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     // Genesis block
     if (pindexLast == NULL)
         return nProofOfWorkLimit;
+
+    // Change difficulty retarget time and block spacing after 45000 blocks
+    if(pindexLast->nHeight >= 45000)
+    {
+        nTargetTimespan = 61440;                      // ~0.711111 days difficulty retarget
+        nTargetSpacing = 60 * 2;                      // 2 minutes between blocks
+        nInterval = nTargetTimespan / nTargetSpacing; // 512 blocks difficulty retarget
+    }
 
     // Only change once per interval
     if ((pindexLast->nHeight+1) % nInterval != 0)
