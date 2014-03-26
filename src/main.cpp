@@ -1105,6 +1105,74 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
     return bnResult.GetCompact();
 }
 
+unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader* pblock, uint64 TargetBlockSpacingSeconds, uint64 PastBlocksMin, uint64 PastBlocksMax)
+{
+	const CBlockIndex *BlockLastSolved = pindexLast;
+	const CBlockIndex *BlockReading    = pindexLast;
+
+	uint64 PastBlocksMass          = 0;
+	int64  PastRateActualSeconds   = 0;
+	int64  PastRateTargetSeconds   = 0;
+	double PastRateAdjustmentRatio = double(1);
+
+	CBigNum PastDifficultyAverage, PastDifficultyAveragePrev;
+	double  EventHorizonDeviation, EventHorizonDeviationFast, EventHorizonDeviationSlow;
+
+	if(BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || (uint64) BlockLastSolved->nHeight < PastBlocksMin)
+		return bnProofOfWorkLimit.GetCompact();
+
+	for(unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++)
+	{
+		if(PastBlocksMax > 0 && i > PastBlocksMax)
+			break;
+
+		PastBlocksMass++;
+
+		PastDifficultyAverage = (i == 0)
+			? PastDifficultyAverage.SetCompact(BlockReading->nBits)
+			: PastDifficultyAverage = ((CBigNum().SetCompact(BlockReading->nBits) - PastDifficultyAveragePrev) / i) + PastDifficultyAveragePrev;
+
+		PastDifficultyAveragePrev = PastDifficultyAverage;
+
+		PastRateActualSeconds = BlockLastSolved->GetBlockTime() - BlockReading->GetBlockTime();
+		PastRateTargetSeconds = TargetBlockSpacingSeconds * PastBlocksMass;
+
+		PastRateActualSeconds = (PastRateActualSeconds < 0) ? 0 : PastRateActualSeconds;
+		PastRateAdjustmentRatio = (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0)
+			? double(PastRateTargetSeconds) / double(PastRateActualSeconds)
+			: double(1);
+
+		EventHorizonDeviation     = 1 + (0.7084 * pow((double(PastBlocksMass) / double(144)), -1.228));
+		EventHorizonDeviationFast = EventHorizonDeviation;
+		EventHorizonDeviationSlow = 1 / EventHorizonDeviation;
+
+		if((PastBlocksMass >= PastBlocksMin && (PastRateAdjustmentRatio <= EventHorizonDeviationSlow || PastRateAdjustmentRatio >= EventHorizonDeviationFast))
+			|| (BlockReading->pprev == NULL)) {
+			assert(BlockReading);
+			break;
+		}
+
+		BlockReading = BlockReading->pprev;
+	}
+
+	CBigNum bnNew(PastDifficultyAverage);
+	if(PastRateActualSeconds != 0 && PastRateTargetSeconds != 0)
+	{
+		bnNew *= PastRateActualSeconds;
+		bnNew /= PastRateTargetSeconds;
+	}
+
+	if(bnNew > bnProofOfWorkLimit) { bnNew = bnProofOfWorkLimit; }
+
+	// Debug
+	printf("Difficulty Retarget - Kimoto Gravity Well\n");
+	printf("PastRateAdjustmentRatio = %g\n", PastRateAdjustmentRatio);
+	printf("Before: %08x %s\n", BlockLastSolved->nBits, CBigNum().SetCompact(BlockLastSolved->nBits).getuint256().ToString().c_str());
+	printf("After:  %08x %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
+
+	return bnNew.GetCompact();
+}
+
 unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
     unsigned int nProofOfWorkLimit = bnProofOfWorkLimit.GetCompact();
@@ -1114,11 +1182,20 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
         return nProofOfWorkLimit;
 
     // Change difficulty retarget time and block spacing after 45000 blocks
-    if(pindexLast->nHeight >= 45000)
+	// Also use KGW now
+    if(pindexLast->nHeight >= 45000 || fTestNet)
     {
         nTargetTimespan = 61440;                      // ~0.711111 days difficulty retarget
         nTargetSpacing = 60 * 2;                      // 2 minutes between blocks
         nInterval = nTargetTimespan / nTargetSpacing; // 512 blocks difficulty retarget
+
+		unsigned int TimeDaySeconds = 60 * 60 * 24;
+		uint64       PastSecondsMin = TimeDaySeconds * 0.25;
+		uint64       PastSecondsMax = TimeDaySeconds * 7;
+		uint64       PastBlocksMin  = PastSecondsMin / nInterval;
+		uint64       PastBlocksMax  = PastSecondsMax / nInterval;
+
+		return KimotoGravityWell(pindexLast, pblock, nTargetSpacing, PastBlocksMin, PastBlocksMax);
     }
 
     // Only change once per interval
@@ -1181,6 +1258,9 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
 
     return bnNew.GetCompact();
 }
+
+
+
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)
 {
