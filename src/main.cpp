@@ -1189,7 +1189,7 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
         nInterval = nTargetTimespan / nTargetSpacing; // 512 blocks difficulty retarget
     }
 
-	if(pindexLast->nHeight >= 50000)
+	if(pindexLast->nHeight >= 50000 || fTestNet)
 	{
 		unsigned int TimeDaySeconds = 60 * 60 * 24;
 		uint64       PastSecondsMin = TimeDaySeconds * 0.25;
