@@ -7,7 +7,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>$VERSION, Copyright © 2014 The EGulden developers</string>
+	<string>$VERSION, Copyright © 2014 The Egulden developers</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$VERSION</string>
 	<key>CFBundleVersion</key>
@@ -15,16 +15,16 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>EGulden-Qt</string>
+	<string>Egulden-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.egulden.EGulden-Qt</string>
+	<string>org.egulden.Egulden-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>org.egulden.EGuldenPayment</string>
+            <string>org.egulden.EguldenPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
               <string>egulden</string>
