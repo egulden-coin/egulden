@@ -1194,7 +1194,14 @@ void MapPort(bool)
 static const char *strMainNetDNSSeed[][2] = {
 	{"e-gulden.com", "dnsseed.e-gulden.com"},
     {"amazingsystems.nl", "amazingsystems.nl"},
-    {NULL, NULL}
+	{"54.72.71.60", "54.72.71.60"},
+	{"5.157.80.21", "5.157.80.21"},
+	{"212.114.110.57", "212.114.110.57"},
+	{"37.247.33.170", "37.247.33.170"},
+	{"95.96.192.87", "95.96.192.87"},
+	{"62.108.7.187", "62.108.7.187"},
+	{"108.61.191.169", "108.61.191.169"},
+	{"87.209.32.110", "87.209.32.110"},
 };
 
 static const char *strTestNetDNSSeed[][2] = {
