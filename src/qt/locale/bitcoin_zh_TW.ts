@@ -1069,7 +1069,7 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start egulden: click-to-pay handler</source>
+        <source>Cannot start litecoin: click-to-pay handler</source>
         <translation>無法啟動 EGulden 隨按隨付處理器</translation>
     </message>
 </context>
@@ -2221,8 +2221,8 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: egulden.conf)</source>
-        <translation>指定設定檔 (預設: egulden.conf)
+        <source>Specify configuration file (default: litecoin.conf)</source>
+        <translation>指定設定檔 (預設: litecoin.conf)
 </translation>
     </message>
     <message>

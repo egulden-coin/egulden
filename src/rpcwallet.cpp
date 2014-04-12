@@ -814,7 +814,7 @@ Value createmultisig(const Array& params, bool fHelp)
         string msg = "createmultisig <nrequired> <'[\"key\",\"key\"]'>\n"
             "Creates a multi-signature address and returns a json object\n"
             "with keys:\n"
-            "address : egulden address\n"
+            "address : litecoin address\n"
             "redeemScript : hex-encoded redemption script";
         throw runtime_error(msg);
     }

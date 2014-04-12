@@ -1069,7 +1069,7 @@ Adres: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start egulden: click-to-pay handler</source>
+        <source>Cannot start litecoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2217,7 +2217,7 @@ Adres: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: egulden.conf)</source>
+        <source>Specify configuration file (default: litecoin.conf)</source>
         <translation>Wskaż plik konfiguracyjny (domyślnie: EGulden.conf)</translation>
     </message>
     <message>

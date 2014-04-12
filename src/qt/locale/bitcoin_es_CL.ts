@@ -1072,7 +1072,7 @@ Dirección: %4</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start egulden: click-to-pay handler</source>
+        <source>Cannot start litecoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2201,7 +2201,7 @@ Dirección: %4</translation>
     <message>
         <location line="-29"/>
         <source>Send command to -server or litecoind</source>
-        <translation>Envia comando a egulden lanzado con -server u litecoind
+        <translation>Envia comando a litecoin lanzado con -server u litecoind
 </translation>
     </message>
     <message>
@@ -2224,14 +2224,14 @@ Dirección: %4</translation>
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: egulden.conf)</source>
-        <translation>Especifica archivo de configuración (predeterminado: egulden.conf)
+        <source>Specify configuration file (default: litecoin.conf)</source>
+        <translation>Especifica archivo de configuración (predeterminado: litecoin.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Specify pid file (default: litecoind.pid)</source>
-        <translation>Especifica archivo pid (predeterminado: egulden.pid)
+        <translation>Especifica archivo pid (predeterminado: litecoin.pid)
 </translation>
     </message>
     <message>
