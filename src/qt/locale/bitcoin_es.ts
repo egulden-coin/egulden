@@ -4,12 +4,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Litecoin</source>
+        <source>About E-Gulden</source>
         <translation>Acerca de EGulden</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Litecoin&lt;/b&gt; version</source>
+        <source>&lt;b&gt;E-Gulden&lt;/b&gt; version</source>
         <translation>Versión de &lt;b&gt;EGulden&lt;/b&gt;</translation>
     </message>
     <message>
@@ -37,7 +37,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+0"/>
-        <source>The Litecoin developers</source>
+        <source>The E-Gulden developers</source>
         <translation>Los programadores EGulden</translation>
     </message>
 </context>
@@ -70,7 +70,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Litecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your E-Gulden addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Estas son sus direcciones EGulden para recibir pagos. Puede utilizar una diferente por cada persona emisora para saber quién le está pagando.</translation>
     </message>
     <message>
@@ -85,7 +85,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Litecoin address</source>
+        <source>Sign a message to prove you own a E-Gulden address</source>
         <translation>Firmar un mensaje para demostrar que se posee una dirección EGulden</translation>
     </message>
     <message>
@@ -110,7 +110,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Litecoin address</source>
+        <source>Verify a message to ensure it was signed with a specified E-Gulden address</source>
         <translation>Verificar un mensaje para comprobar que fue firmado con la dirección EGulden indicada</translation>
     </message>
     <message>
@@ -125,7 +125,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your E-Gulden addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Estas son sus direcciones EGulden para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de transferir monedas.</translation>
     </message>
     <message>
@@ -251,7 +251,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR E-GULDENS&lt;/b&gt;!</source>
         <translation>Atencion: ¡Si cifra su monedero y pierde la contraseña perderá &lt;b&gt;TODOS SUS EGuldenS&lt;/b&gt;!&quot;</translation>
     </message>
     <message>
@@ -278,7 +278,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-56"/>
-        <source>Litecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+        <source>E-Gulden will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your e-guldens from being stolen by malware infecting your computer.</source>
         <translation>EGulden se cerrará para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus EGuldens de robo por malware que infecte su sistema.</translation>
     </message>
     <message>
@@ -377,7 +377,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Litecoin</source>
+        <source>Show information about E-Gulden</source>
         <translation>Mostrar información acerca de EGulden</translation>
     </message>
     <message>
@@ -422,12 +422,12 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Litecoin address</source>
+        <source>Send coins to a E-Gulden address</source>
         <translation>Enviar monedas a una dirección EGulden</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Litecoin</source>
+        <source>Modify configuration options for E-Gulden</source>
         <translation>Modificar las opciones de configuración de EGulden</translation>
     </message>
     <message>
@@ -458,7 +458,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Litecoin</source>
+        <source>E-Gulden</source>
         <translation>EGulden</translation>
     </message>
     <message>
@@ -483,7 +483,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Litecoin</source>
+        <source>&amp;About E-Gulden</source>
         <translation>&amp;Acerca de EGulden</translation>
     </message>
     <message>
@@ -503,12 +503,12 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <source>Sign messages with your E-Gulden addresses to prove you own them</source>
         <translation>Firmar mensajes con sus direcciones EGulden para demostrar la propiedad</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified E-Gulden addresses</source>
         <translation>Verificar mensajes comprobando que están firmados con direcciones EGulden concretas</translation>
     </message>
     <message>
@@ -539,12 +539,12 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+47"/>
-        <source>Litecoin client</source>
+        <source>E-Gulden client</source>
         <translation>Cliente EGulden</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Litecoin network</source>
+        <source>%n active connection(s) to E-Gulden network</source>
         <translation><numerusform>%n conexión activa hacia la red EGulden</numerusform><numerusform>%n conexiones activas hacia la red EGulden</numerusform></translation>
     </message>
     <message>
@@ -659,7 +659,7 @@ Dirección: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid E-Gulden address or malformed URI parameters.</source>
         <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección EGulden inválida o a parámetros de URI mal formados.</translation>
     </message>
     <message>
@@ -674,7 +674,7 @@ Dirección: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. E-Gulden can no longer continue safely and will quit.</source>
         <translation>Ha ocurrido un error crítico. EGulden ya no puede continuar con seguridad y se cerrará.</translation>
     </message>
 </context>
@@ -740,7 +740,7 @@ Dirección: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Litecoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid E-Gulden address.</source>
         <translation>La dirección introducida &quot;%1&quot; no es una dirección EGulden válida.</translation>
     </message>
     <message>
@@ -759,7 +759,7 @@ Dirección: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Litecoin-Qt</source>
+        <source>E-Gulden-Qt</source>
         <translation>EGulden-Qt</translation>
     </message>
     <message>
@@ -822,12 +822,12 @@ Dirección: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Litecoin after logging in to the system.</source>
+        <source>Automatically start E-Gulden after logging in to the system.</source>
         <translation>Iniciar EGulden automáticamente al encender el sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Litecoin on system login</source>
+        <source>&amp;Start E-Gulden on system login</source>
         <translation>&amp;Iniciar EGulden al iniciar el sistema</translation>
     </message>
     <message>
@@ -847,7 +847,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the E-Gulden client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Abrir automáticamente el puerto del cliente EGulden en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
@@ -857,7 +857,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Litecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the E-Gulden network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>Conectar a la red EGulden a través de un proxy SOCKS (ej. para conectar con la red Tor)</translation>
     </message>
     <message>
@@ -932,7 +932,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Litecoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting E-Gulden.</source>
         <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará cuando se reinicie EGulden.</translation>
     </message>
     <message>
@@ -947,7 +947,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Litecoin addresses in the transaction list or not.</source>
+        <source>Whether to show E-Gulden addresses in the transaction list or not.</source>
         <translation>Mostrar o no las direcciones EGulden en la lista de transacciones.</translation>
     </message>
     <message>
@@ -999,7 +999,7 @@ Dirección: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Litecoin.</source>
+        <source>This setting will take effect after restarting E-Gulden.</source>
         <translation>Esta configuración tendrá efecto tras reiniciar EGulden.</translation>
     </message>
     <message>
@@ -1018,7 +1018,7 @@ Dirección: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the E-Gulden network after a connection is established, but this process has not completed yet.</source>
         <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red EGulden después de que se haya establecido una conexión , pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
@@ -1072,7 +1072,7 @@ Dirección: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start litecoin: click-to-pay handler</source>
+        <source>Cannot start e-gulden: click-to-pay handler</source>
         <translation>No se pudo iniciar EGulden: manejador de pago-al-clic</translation>
     </message>
 </context>
@@ -1222,7 +1222,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Litecoin-Qt help message to get a list with possible Litecoin command-line options.</source>
+        <source>Show the E-Gulden-Qt help message to get a list with possible Litecoin command-line options.</source>
         <translation>Mostrar el mensaje de ayuda de EGulden-Qt que enumera las opciones disponibles de línea de órdenes para EGulden.</translation>
     </message>
     <message>
@@ -1242,12 +1242,12 @@ Dirección: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Litecoin - Debug window</source>
+        <source>E-Gulden - Debug window</source>
         <translation>EGulden - Ventana de depuración</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Litecoin Core</source>
+        <source>E-Gulden Core</source>
         <translation>Núcleo de EGulden</translation>
     </message>
     <message>
@@ -1257,7 +1257,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Litecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the E-Gulden debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Abrir el archivo de registro de depuración en el directorio actual de datos. Esto puede llevar varios segundos para archivos de registro grandes.</translation>
     </message>
     <message>
@@ -1267,7 +1267,7 @@ Dirección: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Litecoin RPC console.</source>
+        <source>Welcome to the E-Gulden RPC console.</source>
         <translation>Bienvenido a la consola RPC de EGulden</translation>
     </message>
     <message>
@@ -1451,7 +1451,7 @@ Dirección: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Litecoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a E-Gulden address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation>Introduzca una dirección EGulden (ej. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
@@ -1516,7 +1516,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Litecoin address</source>
+        <source>Sign the message to prove you own this E-Gulden address</source>
         <translation>Firmar el mensaje para demostrar que se posee esta dirección EGulden</translation>
     </message>
     <message>
@@ -1552,7 +1552,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
+        <source>Verify the message to ensure it was signed with the specified E-Gulden address</source>
         <translation>Verificar el mensaje para comprobar que fue firmado con la dirección EGulden indicada</translation>
     </message>
     <message>
@@ -1568,7 +1568,7 @@ Dirección: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Litecoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a E-Gulden address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation>Introduzca una dirección EGulden (ej. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
@@ -1578,7 +1578,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Litecoin signature</source>
+        <source>Enter E-Gulden signature</source>
         <translation>Introduzca una firma EGulden</translation>
     </message>
     <message>
@@ -1652,7 +1652,7 @@ Dirección: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Litecoin developers</source>
+        <source>The E-Gulden developers</source>
         <translation>Los programadores EGulden</translation>
     </message>
     <message>
@@ -2190,7 +2190,7 @@ Dirección: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Litecoin version</source>
+        <source>E-Gulden version</source>
         <translation>Versión de EGulden</translation>
     </message>
     <message>
@@ -2200,7 +2200,7 @@ Dirección: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or litecoind</source>
+        <source>Send command to -server or e-guldend</source>
         <translation>Envíar comando a -server o EGuldend</translation>
     </message>
     <message>
@@ -2223,14 +2223,14 @@ Dirección: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: litecoin.conf)</source>
-        <translation>Especificar archivo de configuración (predeterminado: litecoin.conf)
+        <source>Specify configuration file (default: e-gulden.conf)</source>
+        <translation>Especificar archivo de configuración (predeterminado: e-gulden.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: litecoind.pid)</source>
-        <translation>Especificar archivo pid (predeterminado: litecoin.pid)
+        <source>Specify pid file (default: e-guldend.pid)</source>
+        <translation>Especificar archivo pid (predeterminado: e-gulden.pid)
 </translation>
     </message>
     <message>
@@ -2311,24 +2311,24 @@ Dirección: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=litecoinrpc
+rpcuser=e-guldenrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;E-Gulden Alert&quot; admin@foo.com
 </source>
         <translation>%s, debe establecer un valor rpcpassword en el archivo de configuración:
 %s
 Se recomienda utilizar la siguiente contraseña aleatoria:
-rpcuser=litecoinrpc
+rpcuser=e-guldenrpc
 rpcpassword=%s
 (no es necesario recordar esta contraseña)
 El nombre de usuario y la contraseña DEBEN NO ser iguales.
 Si el archivo no existe, créelo con permisos de archivo de solo lectura.
 Se recomienda también establecer alertnotify para recibir notificaciones de problemas.
-Por ejemplo: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo.com
+Por ejemplo: alertnotify=echo %%s | mail -s &quot;E-Gulden Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2343,7 +2343,7 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Litecoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. E-Gulden is probably already running.</source>
         <translation>No se puede bloquear el directorio de datos %s. Probablemente EGulden ya se está ejecutando.</translation>
     </message>
     <message>
@@ -2388,7 +2388,7 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Litecoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong E-Gulden will not work properly.</source>
         <translation>Precaución: Por favor, ¡revise que la fecha y hora de su ordenador son correctas! Si su reloj está mal, EGulden no funcionará correctamente.</translation>
     </message>
     <message>
@@ -2638,7 +2638,7 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Litecoin Wiki for SSL setup instructions)</source>
+        <source>SSL options: (see the E-Gulden Wiki for SSL setup instructions)</source>
         <translation>Opciones SSL: (ver la EGulden Wiki para instrucciones de configuración SSL)</translation>
     </message>
     <message>
@@ -2838,12 +2838,12 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Litecoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of E-Gulden</source>
         <translation>Error al cargar wallet.dat: El monedero requiere una versión más reciente de EGulden</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Litecoin to complete</source>
+        <source>Wallet needed to be rewritten: restart E-Gulden to complete</source>
         <translation>El monedero ha necesitado ser reescrito. Reinicie EGulden para completar el proceso</translation>
     </message>
     <message>
@@ -2903,7 +2903,7 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Litecoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. E-Gulden is probably already running.</source>
         <translation>No es posible conectar con %s en este sistema. Probablemente EGulden ya está ejecutándose.</translation>
     </message>
     <message>
