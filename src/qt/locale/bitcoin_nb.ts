@@ -1070,7 +1070,7 @@ Adresse: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start litecoin: click-to-pay handler</source>
+        <source>Cannot start egulden: click-to-pay handler</source>
         <translation>Kan ikke starte EGulden: klikk-og-betal håndterer</translation>
     </message>
 </context>
@@ -2218,7 +2218,7 @@ Adresse: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: litecoin.conf)</source>
+        <source>Specify configuration file (default: egulden.conf)</source>
         <translation>Angi konfigurasjonsfil (standardverdi: EGulden.conf)</translation>
     </message>
     <message>

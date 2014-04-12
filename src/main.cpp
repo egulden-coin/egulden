@@ -4637,7 +4637,7 @@ void static LitecoinMiner(CWallet *pwallet)
 {
     printf("EGuldenMiner:\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("litecoin-miner");
+    RenameThread("egulden-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);

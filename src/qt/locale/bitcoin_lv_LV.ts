@@ -1064,7 +1064,7 @@ Adrese: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start litecoin: click-to-pay handler</source>
+        <source>Cannot start egulden: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2212,7 +2212,7 @@ Adrese: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: litecoin.conf)</source>
+        <source>Specify configuration file (default: egulden.conf)</source>
         <translation>Norādiet konfigurācijas failu (pēc noklusēšanas: EGulden.conf)</translation>
     </message>
     <message>
