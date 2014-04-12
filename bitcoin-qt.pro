@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = egulden-qt
-macx:TARGET = "Egulden-Qt"
+macx:TARGET = "EGulden-Qt"
 VERSION = 1.1.0.1
 INCLUDEPATH += src src/json src/qt
 QT += network
